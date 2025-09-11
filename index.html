@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>What is an HTTP Server?</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>What is an HTTP Server?</h1>
+        </header>
+        
+        <section>
+            <p>
+                An <strong>HTTP Server</strong> (Hypertext Transfer Protocol Server) is a software application that handles incoming HTTP requests from clients and sends back HTTP responses. In simpler terms, it's the program that "serves" web pages to users on the internet.
+            </p>
+            <div class="definition">
+                <p>
+                    An HTTP server acts as a listener, waiting for requests from clients (like a web browser) and responding with the requested resources, such as HTML files, CSS stylesheets, JavaScript files, images, or data.
+                </p>
+            </div>
+            
+            <h2>How It Works</h2>
+            <p>
+                The process of an HTTP server handling a request typically follows these steps:
+            </p>
+            <ol>
+                <li><strong>Client Request:</strong> A user types a URL into their web browser (e.g., `http://www.example.com`). The browser creates an HTTP request message and sends it to the server.</li>
+                <li><strong>Server Listening:</strong> The HTTP server is constantly running, listening on a specific port (usually port 80 for HTTP or 443 for HTTPS) for incoming requests.</li>
+                <li><strong>Processing the Request:</strong> When the server receives a request, it parses the message to understand what the client is asking for. This includes the request method (e.g., GET, POST) and the resource path (e.g., `/index.html`).</li>
+                <li><strong>Resource Retrieval:</strong> The server locates the requested resource on its file system. For example, if the request is for `/about.html`, the server looks for a file named `about.html`.</li>
+                <li><strong>Server Response:</strong> The server constructs an HTTP response. This response includes a status code (e.g., `200 OK` for success, `404 Not Found` for an error), response headers, and the requested data (the content of the HTML file, image, etc.).</li>
+                <li><strong>Sending the Response:</strong> The server sends the complete HTTP response back to the client's browser. The browser then renders the content for the user to see.</li>
+            </ol>
+
+            <h2>HTTP Server vs. Web Server</h2>
+            <p>
+                The terms "HTTP server" and "web server" are often used interchangeably, but there's a slight distinction. An <strong>HTTP server</strong> is specifically the software component that handles the protocol. A <strong>web server</strong> is a broader term that can refer to the entire system—the hardware (the physical computer) and the software (the HTTP server, operating system, etc.) that work together to serve web content. Popular examples of HTTP/web server software include Apache, Nginx, Microsoft IIS, and Node.js with Express.
+            </p>
+        </section>
+    </div>
+
+</body>
+</html>
