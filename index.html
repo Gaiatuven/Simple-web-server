@@ -17,11 +17,11 @@
     </nav>
 
     <div class="container">
-        <header>
+        <header id="home">
             <h1>What is an HTTP Server?</h1>
         </header>
         
-        <section>
+        <section id="learn">
             <p>
                 An <strong>HTTP Server</strong> (Hypertext Transfer Protocol Server) is a software application that handles incoming HTTP requests from clients and sends back HTTP responses. In simpler terms, it's the program that "serves" web pages to users on the internet.
             </p>
@@ -36,11 +36,11 @@
                 The process of an HTTP server handling a request typically follows these steps:
             </p>
             <ol>
-                <li><strong>Client Request:</strong> A user types a URL into their web browser (e.g., `http://www.example.com`). The browser creates an HTTP request message and sends it to the server.</li>
+                <li><strong>Client Request:</strong> A user types a URL into their web browser (e.g., <code>http://www.example.com</code>). The browser creates an HTTP request message and sends it to the server.</li>
                 <li><strong>Server Listening:</strong> The HTTP server is constantly running, listening on a specific port (usually port 80 for HTTP or 443 for HTTPS) for incoming requests.</li>
-                <li><strong>Processing the Request:</strong> When the server receives a request, it parses the message to understand what the client is asking for. This includes the request method (e.g., GET, POST) and the resource path (e.g., `/index.html`).</li>
-                <li><strong>Resource Retrieval:</strong> The server locates the requested resource on its file system. For example, if the request is for `/about.html`, the server looks for a file named `about.html`.</li>
-                <li><strong>Server Response:</strong> The server constructs an HTTP response. This response includes a status code (e.g., `200 OK` for success, `404 Not Found` for an error), response headers, and the requested data (the content of the HTML file, image, etc.).</li>
+                <li><strong>Processing the Request:</strong> When the server receives a request, it parses the message to understand what the client is asking for. This includes the request method (e.g., GET, POST) and the resource path (e.g., <code>/index.html</code>).</li>
+                <li><strong>Resource Retrieval:</strong> The server locates the requested resource on its file system. For example, if the request is for <code>/about.html</code>, the server looks for a file named <code>about.html</code>.</li>
+                <li><strong>Server Response:</strong> The server constructs an HTTP response. This response includes a status code (e.g., <code>200 OK</code> for success, <code>404 Not Found</code> for an error), response headers, and the requested data (the content of the HTML file, image, etc.).</li>
                 <li><strong>Sending the Response:</strong> The server sends the complete HTTP response back to the client's browser. The browser then renders the content for the user to see.</li>
             </ol>
 

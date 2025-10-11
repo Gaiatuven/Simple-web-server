@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./welcomepage.css">
+    <title>Welcome - Learn HTTP Servers</title>
 </head>
 <body>
-     <div class="main-container">
+    <nav>
+        <a href="./welcome.html">Home</a>
+        <a href="./index.html">Learn More</a>
+    </nav>
+
+    <div class="main-container">
         <div class="welcome-card">
-            <h1>Welcome!</h1>
-            <p class="subtitle">We're thrilled to have you here. Discover amazing possibilities and join our vibrant community.</p>
+            <h1>Welcome to HTTP Server Learning!</h1>
+            <p class="subtitle">Master the fundamentals of HTTP servers and understand how the web works. Start your journey into backend development today.</p>
             
             <div class="features">
                 <div class="feature">
-                    <span class="feature-icon">🚀</span>
-                    <h3>Fast & Reliable</h3>
-                    <p>Experience lightning-fast performance with our optimized platform.</p>
+                    <span class="feature-icon">🌐</span>
+                    <h3>Understanding HTTP</h3>
+                    <p>Learn how HTTP servers handle requests and responses, the foundation of all web communication.</p>
                 </div>
                 <div class="feature">
-                    <span class="feature-icon">🎨</span>
-                    <h3>Beautiful Design</h3>
-                    <p>Enjoy our carefully crafted, modern interface that's easy on the eyes.</p>
+                    <span class="feature-icon">⚙️</span>
+                    <h3>Build Your Own Server</h3>
+                    <p>Follow our step-by-step guide to create a functional HTTP server from scratch using Node.js.</p>
                 </div>
                 <div class="feature">
-                    <span class="feature-icon">🤝</span>
-                    <h3>Community Driven</h3>
-                    <p>Connect with like-minded individuals and grow together.</p>
+                    <span class="feature-icon">🔒</span>
+                    <h3>Security Best Practices</h3>
+                    <p>Discover essential security measures like preventing path traversal attacks and proper error handling.</p>
                 </div>
             </div>
 
-            <a href="./index.html" class="cta-button pulse">Get Started</a>
+            <div class="info-box">
+                <h2>What You'll Learn</h2>
+                <p>This tutorial covers everything you need to know about HTTP servers:</p>
+                <ul>
+                    <li>How HTTP request/response cycles work</li>
+                    <li>Setting up a Node.js server with the <code>http</code> module</li>
+                    <li>Serving static files (HTML, CSS, JavaScript, images)</li>
+                    <li>Understanding MIME types and content headers</li>
+                    <li>Implementing security measures</li>
+                    <li>Handling errors gracefully with proper status codes</li>
+                </ul>
+            </div>
+
+            <a href="./index.html" class="cta-button pulse">Start Learning</a>
         </div>
     </div>
 </body>
