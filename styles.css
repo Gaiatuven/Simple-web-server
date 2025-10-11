@@ -114,3 +114,10 @@ code {
 .cta-button:active {
     transform: translateY(-1px);
 }
+
+.node-logo-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
