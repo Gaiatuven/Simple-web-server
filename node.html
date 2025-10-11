@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+       <nav>
+        <a href="#home">Home</a>
+        <a href="#learn">Learn More</a>
+    </nav>
+
+    <div class="container">
+        <div class="node-logo-image">
+            <img src="./Img/512px-Node.js_logo.svg.png" alt="node-logo-image">
+        </div>
+        <header id="home">
+            <h1>Setting Up a Node.js Server with the http Module?</h1>
+        </header>
+        
+        <section id="learn">
+            
+            <h2>How It Works</h2>
+    
+            <ol>
+                <li><strong>Initial Setup: </strong>Show how to initialize a Node.js project <code>(npm init)</code>and create the main server file.</li>
+                <li><strong>Importing <code>http</code>:</strong> Demonstrate requiring the built-in <code>http</code> module.</li>
+                <li><strong>Creating the Server: </strong>Use <code>http.createServer()</code>to define the server logic.</li>
+                <ul>
+                    <li>Explain the callback function that receives the <code>request</code>(req) and <code>response(res)</code></li>
+                </ul>
+                <li><strong>Listening for Requests:</strong>Use <code>server.listen(port, hostname, callback)</code>to start the server.</li>
+                <li><strong>Basic Response: </strong>Show how to send a simple "Hello World" response using <code>res.writeHead()</code> (for headers/status) and <code>res.end()</code> (for the body).</li>
+            </ol>
+
+            <a href="./mimetypes.html" class="cta-button pulse">Start Learning</a>
+        </section>
+    </div> 
+</body>
+</html>
