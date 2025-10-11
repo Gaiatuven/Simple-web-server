@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>What is an HTTP Server?</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#learn">Learn More</a>
+    </nav>
+
+    <div class="container">
+        <header id="home">
+            <h1>How HTTP Request/Response Cycles Work?</h1>
+        </header>
+        
+        <section id="learn">
+            <p>
+                <strong>Request Line: </strong> Define the roles of the client (e.g., a web browser) and the server..
+            </p>
+            
+            <h2>How It Works</h2>
+            <p>
+                The Request: Break down the components of an HTTP request:
+            </p>
+            <ol>
+                <li><strong>Request Line:</strong> Method (e.g., GET, POST), URL, and HTTP version.</li>
+                <li><strong>Request Headers:</strong> Metadata (e.g., Host, User-Agent, Accept). </li>
+                <li><strong>Request Body:</strong> Optional, used primarily with POST and PUT (for data submission).</li>
+            </ol>
+            <p>
+                The Response: Break down the components of an HTTP response:
+            </p>
+            <ol>
+                <li><strong>Status Line:</strong>HTTP version, Status Code (e.g., 200 OK), and Status Text.</li>
+                <li><strong>Response Headers: </strong>Metadata (e.g., Content-Type, Content-Length, Set-Cookie).</li>
+                <li><strong>Response Body:</strong>The data being sent back (e.g., HTML, JSON, image data).</li>
+            </ol>
+
+            <div class="definition">
+                <p>
+                    <strong>The Cycle: </strong>
+                    Client sends a request → Server processes it → Server sends a response → Client renders the result.
+                </p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
