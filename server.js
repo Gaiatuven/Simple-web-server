@@ -30,8 +30,6 @@ const server = createServer((req, res) => {
       return;
     }
 
-    console.log("Loading " + pathname);
-
     // Check if file/directory exists
     let stats;
     try {
@@ -63,7 +61,7 @@ const server = createServer((req, res) => {
       fileStream.pipe(res);
     } else if (stats.isDirectory()) {
       // Redirect to index.html within that directory
-      const indexPath = path.join(pathname, "index.html");
+      const indexPath = path.join(pathname, "welcomepage.html");
       res.writeHead(302, { Location: indexPath });
       res.end();
     } else {
