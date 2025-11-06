@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./welcomepage.css">
+    <title>Serving Static Files (HTML, CSS, JavaScript, images)</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/welcomepage.html">Home</a>
+        <a href="#">Learn More</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="welcome-card">
+            <h2>A professional server responds correctly when things go wrong.</h2>
+            <div class="info-box">
+                <ul>
+                    <li>The 404 (Not Found) Error: Implement a dedicated function or logic to send a 404 status code and
+                        a custom error page/message when a resource is not found.</li>
+                    <li>The 500 (Internal Server Error): Explain that this code is used for unexpected errors that
+                        happen on the server (e.g., a file system read failure). Use a try...catch block or error
+                        handler logic to catch these, log them for debugging, and send a 500 status code.</li>
+                    <li>Other Useful Codes:</li>
+                    <ul>
+                        <li>400 Bad Request: For when the client sends malformed data.</li>
+                        <li>301 Moved Permanently: For redirects (setting the Location header).</li>
+                    </ul>
+
+                    <li>Using res.writeHead(): Reiterate the proper way to set the status code before sending the
+                        response body.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

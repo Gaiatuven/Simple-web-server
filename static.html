@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./welcomepage.css">
+    <title>Serving Static Files (HTML, CSS, JavaScript, images)</title>
+</head>
+<body>
+    <nav>
+        <a href="./welcome.html">Home</a>
+        <a href="#">Learn More</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="welcome-card">
+            <p class="subtitle">A crucial step for any real-world web server.</p>
+
+            <div class="info-box">
+                <ul>
+                    <li>File System Access: Introduce the fs (File System) module and its methods, particularly fs.readFile() (or the non-blocking fs.promises.readFile()).</li>
+                    <li>Path Resolution: Use the path module to construct correct, platform-independent file paths.</li>
+                    <li>Reading and Sending Files: Show the logic for reading a requested file from a directory and piping its contents into the response body (res.end(data)).</li>
+                    <li>Error Handling for Files: Handle the case where a requested file doesn't exist (e.g., send a 404 Not Found response).</li>
+                </ul>
+            </div>
+
+            <a href="/security.html" class="cta-button pulse">Next</a>
+        </div>
+    </div>
+</body>
+</html>

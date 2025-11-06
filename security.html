@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./welcomepage.css">
+    <title>Serving Static Files (HTML, CSS, JavaScript, images)</title>
+</head>
+<body>
+    <nav>
+        <a href="./welcome.html">Home</a>
+        <a href="#">Learn More</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="welcome-card">
+            <p class="subtitle">Implementing Security Measures.</p>
+            <h2>Focus on foundational, easy-to-implement server security.</h2>
+            <div class="info-box">
+                <ul>
+                    <li>Preventing Directory Traversal: Emphasize the importance of sanitizing or strictly controlling user input to req.url to prevent access to unauthorized files outside the public directory (e.g., using path.join() and checking if the resolved path is within the designated public folder).</li>
+                    <li>Secure Headers: Introduce simple security headers via res.writeHead():</li>
+                    <li>X-Content-Type-Options: nosniff: Prevents the browser from MIME-sniffing and overriding the Content-Type.</li>
+                    <li>X-Frame-Options: DENY: Mitigates clickjacking attacks.</li>
+                    <li>CORS (Cross-Origin Resource Sharing): Briefly explain what CORS is and how to enable basic access for testing using Access-Control-Allow-Origin: * (with the caveat that this should be restricted in production).</li>
+                </ul>
+            </div>
+
+            <a href="/errorHandling.html" class="cta-button pulse">Next</a>
+        </div>
+    </div>
+</body>
+</html>
