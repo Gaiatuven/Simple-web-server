@@ -87,7 +87,7 @@ code {
   color: #e74c3c;
 }
 
-/* Pulse Animation */
+/* Pulse Animation
 .pulse {
     animation: pulse 2s infinite;
 }
@@ -121,3 +121,12 @@ code {
   align-items: center;
   margin-bottom: 10px;
 }
+
+#intro ul {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}    */
